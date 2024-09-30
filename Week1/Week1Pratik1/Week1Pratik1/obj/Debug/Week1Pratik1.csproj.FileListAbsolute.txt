@@ -1,0 +1,5 @@
+C:\Users\Page\Documents\SharpDevelop Projects\Week1Pratik1\Week1Pratik1\bin\Debug\Week1Pratik1.exe
+C:\Users\Page\Documents\SharpDevelop Projects\Week1Pratik1\Week1Pratik1\bin\Debug\Week1Pratik1.pdb
+C:\Users\Page\Documents\SharpDevelop Projects\Week1Pratik1\Week1Pratik1\obj\Debug\Week1Pratik1.csprojResolveAssemblyReference.cache
+C:\Users\Page\Documents\SharpDevelop Projects\Week1Pratik1\Week1Pratik1\obj\Debug\Week1Pratik1.exe
+C:\Users\Page\Documents\SharpDevelop Projects\Week1Pratik1\Week1Pratik1\obj\Debug\Week1Pratik1.pdb
