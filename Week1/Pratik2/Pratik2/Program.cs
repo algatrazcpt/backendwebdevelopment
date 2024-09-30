@@ -21,29 +21,29 @@ namespace Pratik2
             double price1=0;//gelecek veri boyutu yüksek ve ondalıklı olabilecegi icin kullanıldı
             double price2=0;
 
-            Console.WriteLine("Aşagıda istene bilgileri giriniz");
+            Console.WriteLine("Lütfen asagıdaki bilgileri giriniz");
             Console.Write("Tc Kimlik Numarası:");
             //Hata olmaması için tryparse ile çevirme yapıldı degiskenler
             Int64.TryParse(Console.ReadLine(), out tcNo);
-            Console.Write("Ad:");
+            Console.Write("Adı:");
             name= Console.ReadLine();
-            Console.Write("Soyad:");
+            Console.Write("Soyadı:");
             surname = Console.ReadLine();
-            Console.Write("Telefon:");
+            Console.Write("Telefon numarası:");
             Int64.TryParse(Console.ReadLine(), out tel);
             Console.Write("Yas:");
             byte.TryParse(Console.ReadLine(), out age);
-            Console.Write("İlk aldıgınız ürün fiyatı:");
+            Console.Write("İlk aldıgı ürünün fiyatı:");
             double.TryParse(Console.ReadLine(),out price1);
-            Console.Write("İkinci aldıgınız ürün fiyatı:");
+            Console.Write("İkinci aldıgı ürünün fiyatı:");
             double.TryParse(Console.ReadLine(), out price2);
             Console.WriteLine("----------------------------------------");
 
             //Kolay yazım için $ ile metne eklenmiştir degiskenler
-            Console.WriteLine($"{tcNo} Tc numarılı {name} {surname} isimli kişi için kayıt oluşturulmuştur.");
-            Console.WriteLine($"{tel} telefon numarasına bildirim mesajı gönderilmiştir.");
+            Console.WriteLine($"{tcNo} Tc numarılı {name} {surname} isimli kişi için kayıt olusturulmustur.");
+            Console.WriteLine($"{tel} telefon numarasına bildirim mesajı gönderilmistir.");
             double priceSum=  price1 + price2;
-            Console.WriteLine($"{priceSum} toplam harcama karşılığı kazanılan %10 patika puan miktarı -> {priceSum * 0.10} TL'dir.");
+            Console.WriteLine($"{priceSum} toplam harcama karsılıgı kazanılan %10 patika puan miktarı -> {priceSum * 0.10} TL'dir.");
 
 
             Console.ReadKey();
