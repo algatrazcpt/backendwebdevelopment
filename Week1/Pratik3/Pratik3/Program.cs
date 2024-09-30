@@ -19,7 +19,7 @@ namespace Pratik3
             {
                 numDurum = num > 10 ? "dan Büyüktür" : "dan Küçüktür";//  if else tanımı yerine kontrol edip degerin türünü alıyoruz
             }
-            Console.WriteLine($"Girilen sayı 10'{numDurum} ");//Tekrar yazdıyıoruzz
+            Console.WriteLine($"Girilen sayı 10'{numDurum} ");//Sayının şuanki durumunu yazıyoruz
             numDurum = num%2==0 ? "çifttir" : "tektir";//sayının hangi durumda oldugunu büyük,kücük,esitlik tekrar degiştiriyiroz ve  tek çift yapıyoruz
             Console.WriteLine($"Girilen sayı {numDurum}");
 
