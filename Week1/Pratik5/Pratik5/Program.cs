@@ -57,15 +57,23 @@ namespace Pratik5
                     }
                     else
                     {
-                        if (maxQuestion >=currentQuestion)
-                        {
-                            Console.WriteLine(maxQuestion > currentQuestion ? "Yeni Sorunuz" : "Son Soru");
                         //dogru sayısını artırıyoruz
                          currentTrueQuestion++;
-                        }
+                        
                     }
-                //islemlerden sonrası soru sayını artırıyorum 
+
                 currentQuestion++;
+                if(maxQuestion>currentQuestion)
+                {
+                    Console.WriteLine("Yeni Soru");
+                }
+                if (maxQuestion == currentQuestion)
+                {
+                    Console.WriteLine("Son Soru");
+                }
+
+                //islemlerden sonrası soru sayını artırıyorum 
+                
                 //Yeni Soruları swicth için de tutup tanımlıyorum
                 switch (currentQuestion)
                     {
