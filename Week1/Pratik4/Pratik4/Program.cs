@@ -12,6 +12,8 @@ namespace Pratik4
         //Pratik 4  If / Else ve Switch-Case
         static void Main(string[] args)
         {
+            //Kullanım olarak switch case daha dogru bir yaklasim daha okunabilir if else yapısına göre
+
             int apple = 2;
             int pine = 3;
             int straw = 2;
