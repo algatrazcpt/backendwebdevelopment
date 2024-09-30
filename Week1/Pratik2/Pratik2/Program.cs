@@ -13,12 +13,12 @@ namespace Pratik2
         {
             
             //Degisken tanımlamaları ve atamaları yapıldı
-            Int64 tcNo=1;
+            Int64 tcNo=1;//gelecek veri boyutu yüksek ama ondaklı olmayacagı icin kullanıldı
             string name="";
             string surname="";
             Int64 tel = 1;
-            byte age=0;
-            double price1=0;
+            byte age=0;//Gelebilecek veri boyutu düsük oldugu icin
+            double price1=0;//gelecek veri boyutu yüksek ve ondalıklı olabilecegi icin kullanıldı
             double price2=0;
 
             Console.WriteLine("Aşagıda istene bilgileri giriniz");
@@ -38,6 +38,7 @@ namespace Pratik2
             Console.Write("İkinci aldıgınız ürün fiyatı:");
             double.TryParse(Console.ReadLine(), out price2);
             Console.WriteLine("----------------------------------------");
+
             //Kolay yazım için $ ile metne eklenmiştir degiskenler
             Console.WriteLine($"{tcNo} Tc numarılı {name} {surname} isimli kişi için kayıt oluşturulmuştur.");
             Console.WriteLine($"{tel} telefon numarasına bildirim mesajı gönderilmiştir.");
