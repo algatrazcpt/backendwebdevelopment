@@ -63,6 +63,7 @@ namespace Pratik5
                     }
 
                 currentQuestion++;
+                // kasıtlı olarak  2 farklı if tanımlandı programda gelen soru sayısı max questiondan den büyük oluyor else kullanımı mümkün olmuyor bu yüzden
                 if(maxQuestion>currentQuestion)
                 {
                     Console.WriteLine("Yeni Soru");
