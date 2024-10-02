@@ -17,9 +17,17 @@
                 Console.WriteLine("3 -> 1 ile 20 arasındaki çift sayıları konsol ekranına yazdırınız.");
                 Console.WriteLine("4 -> 50 ile 150 arasındaki sayıların toplamını ekrana yazdırınız.");
                 Console.WriteLine("5 -> 1 ile 120 arasındaki tek ve çift sayıların toplamlarını ayrı ayrı ekrana yazdırınız.");
-                Console.Write("Proje Numarası:");
-                byte projectId = byte.Parse(Console.ReadLine());//switch case yapısı ile projeleri ayırıdım deger yüksek olmadıgı için byte yaptım
+                Console.WriteLine("1 ila 5 arasında bir proje seçebilirsiniz");
+                
+                byte projectId = 0;
+                
+                for(int _;(0>= projectId)||(6<=projectId);)
+                {
+                    Console.Write("Proje Numarası:");
+                    byte.TryParse(Console.ReadLine(), out  projectId);
+                }
 
+                
 
                 switch (projectId)
                 {
@@ -81,10 +89,10 @@
                             break;
                         }
                 }
-                Console.Write("Çıkma için e dışında bir tuşa basın:");
-                loopAviable = Char.ToLower(Console.ReadKey().KeyChar) == 'e' ? loopAviable : false;//if else yerine ? işareti ile koşulu kontrol ediyrumn
+                Console.Write("Devam etmek için e dışında bir tuşa basın:");
+                loopAviable = Char.ToLower(Console.ReadKey().KeyChar) == 'e' ? false : loopAviable;//if else yerine ? işareti ile koşulu kontrol ediyrumn
                                                                                                    //Console.readkey ile klavyeden gelen tuşu alıp küçük harf yaptım
-                                                                                                   //bastki for döngümüzün koşulunu gelen key e degilse false yapıp biyiriyorum
+                                                                                                   //bastki for döngümüzün koşulunu gelen key e ise false yapıp bitiriyorum
                                                                                                    //burda döngüyü break ilede durdurabilirdik ama onun için if else yapısı gerekirdi
                                                                                                    //break bir veri döndermedigi için loopAviable daki degerinin degistirdik
                 Console.Clear();
