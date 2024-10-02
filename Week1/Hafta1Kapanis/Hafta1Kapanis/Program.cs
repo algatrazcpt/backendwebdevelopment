@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace Hafta1Kapanis
 {
     internal class Program
-    { 
+    {
 
         //Hafta1 Kapanis
 
@@ -19,14 +19,14 @@ namespace Hafta1Kapanis
         //Enum tipi içerde tanımlanmadıgı için main dışında tanımladım
         enum days
         {
-            pazartesi=1,
+            pazartesi = 1,
             salı = 2,
             çarşamba = 3,
             perşembbe = 4,
             cuma = 5,
             cumartesi = 6,
             pazar = 7,
-            gecersizgün=0
+            gecersizgün = 0
         }
         static void Main(string[] args)
         {
@@ -141,7 +141,7 @@ namespace Hafta1Kapanis
                         }
                     case 8:
                         {
-                            Console.WriteLine("8.) Kullanıcıdan bir ay numarası (1-12) alın ve bu ayın kaç gün olduğunu yazdırın. Şubat ayı için 28 gün, diğer aylar için gün sayısını kontrol edin.");
+                            Console.WriteLine("8.) Kullanıcıdan bir ay numarası (1-12) alın ve bu ayın kaç gün olduğunau yazdırın. Şubat ayı için 28 gün, diğer aylar için gün sayısını kontrol edin.");
                             Console.Write("Ay numarasını Giriniz:");
                             byte currentMont = byte.Parse(Console.ReadLine());
                             if ((currentMont >= 0 && currentMont <= 12))
@@ -212,13 +212,13 @@ namespace Hafta1Kapanis
 
                             break;
                         }
-                
+
                 }
-                
+
                 Console.WriteLine("------------------------------------------------------------------");
                 Console.Write("Devam etmek için E çıkmak için H (E/H):");
-                char exitKey= char.ToLower(char.Parse(Console.ReadLine()));
-                if(exitKey=='h')
+                char exitKey = char.ToLower(char.Parse(Console.ReadLine()));
+                if (exitKey == 'h')
                 {
                     break;
                 }
