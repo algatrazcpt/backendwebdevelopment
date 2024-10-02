@@ -21,10 +21,10 @@
                 
                 byte projectId = 0;
                 
-                for(int _;(0>= projectId)||(6<=projectId);)
+                for(int _;(0>= projectId)||(6<=projectId);)//degisken atamasını kullanmadıgım için böyle atadım gelen porje id sini 2 koşula göre deglendirdim
                 {
                     Console.Write("Proje Numarası:");
-                    byte.TryParse(Console.ReadLine(), out  projectId);
+                    byte.TryParse(Console.ReadLine(), out  projectId);//çevir işlemi hata vermesin diye try parse kullandım
                 }
 
                 
@@ -96,6 +96,15 @@
                                                                                                    //burda döngüyü break ilede durdurabilirdik ama onun için if else yapısı gerekirdi
                                                                                                    //break bir veri döndermedigi için loopAviable daki degerinin degistirdik
                 Console.Clear();
+
+
+                for(int degisken; true;)
+                {
+
+                }
+
+
+
 
 
             }
