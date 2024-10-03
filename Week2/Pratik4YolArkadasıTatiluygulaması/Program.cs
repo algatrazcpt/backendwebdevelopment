@@ -1,4 +1,4 @@
-﻿namespace Pratik4YolArkadasıTatiluygulaması
+﻿namespace Pratik4YolArkadasiTatiluygulamasi
 {
     internal class Program
     {
