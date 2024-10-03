@@ -8,7 +8,7 @@
             Method1SongsWriter();
             Console.WriteLine(new string('*', 14));
             //
-            Console.WriteLine($"Rastgele sayınız:{PlayerRandomNumberCreate()}");
+            Console.WriteLine($"%2={PlayerRandomNumberCreate()}");
             Console.WriteLine(new string('*', 14));
             //
             Console.WriteLine("2 Tane sayı giriniz çarpılcak");
@@ -38,7 +38,9 @@
         static int PlayerRandomNumberCreate()
         {
             Console.WriteLine("Geriye Tamsayı Döndüren Bir metot");
-            return new Random().Next()%2;//rastgele sayı oluşturup 2 ye bölümünden kalanını dönderiyorum
+            int randomNumberGenerated = new Random().Next();
+            Console.Write($"Rastgele Sayı {randomNumberGenerated}");
+            return randomNumberGenerated%2;//rastgele sayı oluşturup 2 ye bölümünden kalanını dönderiyorum
         }
         static double TwoNumsMultiply(double num1, double num2)//2 parametre alıyorum
         {
