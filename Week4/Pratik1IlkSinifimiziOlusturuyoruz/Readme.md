@@ -1,4 +1,4 @@
-# Pratik - Ýlk Sýnýfýmýzý Oluþturuyoruz
+# Pratik1 - Ýlk Sýnýfýmýzý Oluþturuyoruz
 
 ## Ýçerikler
 

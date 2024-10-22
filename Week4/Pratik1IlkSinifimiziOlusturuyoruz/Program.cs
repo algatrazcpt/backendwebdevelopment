@@ -1,4 +1,4 @@
-﻿namespace Pratik4IlkSinifimiziOlusturuyoruz
+﻿namespace Pratik1IlkSinifimiziOlusturuyoruz
 {
     public class Person
     {
