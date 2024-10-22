@@ -36,11 +36,6 @@
         }
     }
 
-
-
-
-
-
     internal class Program
     {
         static void Main(string[] args)
@@ -74,8 +69,6 @@
                 a.Gorev();
             }
             Console.ReadLine();
-
-
 
         }
     }
