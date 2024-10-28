@@ -165,6 +165,7 @@ namespace Pratik4ImdbList
             }
                 ShowFilmsResearch(filmList);
             
+            
            }
         }
     }
