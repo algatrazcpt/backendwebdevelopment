@@ -83,42 +83,66 @@ Select * from film where rental_rate In(0.99,2.99,4.99) and replacement_cost In(
 ## Ödev3
 
 ### <a name="odev3-soru1"></a>1. country tablosunda bulunan country sütunundaki ülke isimlerinden 'A' karakteri ile başlayıp 'a' karakteri ile sonlananları sıralayınız.
-![Task3_1](images/task3_1.PNG)
 ```sql
 Select country From country where country like 'A%a';
 ```
+![Task3_1](images/task3_1.PNG)
+
 
 ### <a name="odev3-soru2"></a>2. country tablosunda bulunan country sütunundaki ülke isimlerinden en az 6 karakterden oluşan ve sonu 'n' karakteri ile sonlananları sıralayınız.
-![Task3_2](images/task3_2.PNG)
 ```sql
 Select country From country where country like'______%n';
 ```
+![Task3_2](images/task3_2.PNG)
+
 
 ### <a name="odev3-soru3"></a>3. film tablosunda bulunan title sütunundaki film isimlerinden en az 4 adet büyük ya da küçük harf farketmesizin 'T' karakteri içeren film isimlerini sıralayınız.
-![Task3_3](images/task3_3.PNG)
 ```sql
 select title From film where title Ilike '%t%t%t%t%'
 ```
+![Task3_3](images/task3_3.PNG)
+
 
 ### <a name="odev3-soru4"></a>4. film tablosunda bulunan tüm sütunlardaki verilerden title 'C' karakteri ile başlayan ve uzunluğu (length) 90 dan büyük olan ve rental_rate 2.99 olan verileri sıralayınız.
-![Task3_4](images/task3_4.PNG)
 ```sql
 Select * From film where title like 'C%' and length>90 and rental_rate=2.99;
 ```
+![Task3_4](images/task3_4.PNG)
+
 
 ## Ödev4
 
 ### <a name="odev4-soru1"></a>1. film tablosunda bulunan replacement_cost sütununda bulunan birbirinden farklı değerleri sıralayınız.
-Açıklama burada yer alır.
+```sql
+Select Distinct replacement_cost From film 
+```
+![Task4_1](images/task4_1.PNG)
+
 
 ### <a name="odev4-soru2"></a>2. film tablosunda bulunan replacement_cost sütununda birbirinden farklı kaç tane veri vardır?
-Açıklama burada yer alır.
+```sql
+Select count(Distinct replacement_cost) From film  
+```
+![Task4_2](images/task4_2.PNG)
+
 
 ### <a name="odev4-soru3"></a>3. film tablosunda bulunan film isimlerinde (title) kaç tanesi T karakteri ile başlar ve aynı zamanda rating 'G' ye eşittir?
-Açıklama burada yer alır.
+```sql
+Select Count(*) from film where title like 'T%' and rating='G';
+```
+![Task4_3](images/task4_3.PNG)
+
 
 ### <a name="odev4-soru4"></a>4. country tablosunda bulunan ülke isimlerinden (country) kaç tanesi 5 karakterden oluşmaktadır?
-Açıklama burada yer alır.
+```sql
+Select Count(*)from country where country like '_____';  
+```
+![Task4_4](images/task4_4.PNG)
+
 
 ### <a name="odev4-soru5"></a>5. city tablosundaki şehir isimlerinin kaç tanesi 'R' veya r karakteri ile biter?
-Açıklama burada yer
+```sql
+Select count(Distinct replacement_cost) From film  
+```
+![Task4_5](images/task4_5.PNG)
+
