@@ -42,25 +42,25 @@ Select title,description From film;
 ```sql
 Select * From film where length>60 and length<75;
 ```
-![Task1_1](images/task1_2.png)
+![Task1_2](images/task1_2.png)
 
 ### <a name="odev1-soru3"></a>3. film tablosunda bulunan tüm sütunlardaki verileri rental_rate 0.99 VE replacement_cost 12.99 VEYA 28.99 olma koşullarıyla sıralayınız.
 ```sql
 Select * From film where rental_rate=0.99 and replacement_cost =12.99 or replacement_cost =28.99;
 ```
-![Task1_1](images/task1_3.png)
+![Task1_3](images/task1_3.png)
 
 ### <a name="odev1-soru4"></a>4. customer tablosunda bulunan first_name sütunundaki değeri 'Mary' olan müşterinin last_name sütunundaki değeri nedir?
 ```sql
 Select last_name From customer where first_name ='Mary';
 ```
-![Task1_1](images/task1_4.png)
+![Task1_4](images/task1_4.png)
 
 ### <a name="odev1-soru5"></a>5. film tablosundaki uzunluğu(length) 50 ten büyük OLMAYIP aynı zamanda rental_rate değeri 2.99 veya 4.99 OLMAYAN verileri sıralayınız.
 ```sql
 Select * From film where length<50 and rental_rate=2.99 or rental_rate!=4.99;
 ```
-![Task1_1](images/task1_5.png)
+![Task1_5](images/task1_5.png)
 
 ## Ödev2
 
