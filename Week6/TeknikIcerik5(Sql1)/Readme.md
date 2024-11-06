@@ -67,32 +67,44 @@ Select * From film where length<50 and rental_rate=2.99 or rental_rate!=4.99;
 ```sql
 Select * from film  where replacement_cost Between  12.99 and 16.98;
 ```
-![Task1_2](images/task2_1.PNG)
+![Task2_1](images/task2_1.PNG)
 
 ### <a name="odev2-soru2"></a>2. actor tablosunda bulunan first_name ve last_name sütunlardaki verileri first_name 'Penelope' veya 'Nick' veya 'Ed' değerleri olması koşuluyla sıralayınız.
 ```sql
 Select first_name,last_name From actor Where first_name In('Penelope','Nick','ED');
 ```
-![Task1_2](images/task2_2.PNG)
+![Task2_2](images/task2_2.PNG)
 ### <a name="odev2-soru3"></a>3. film tablosunda bulunan tüm sütunlardaki verileri rental_rate 0.99, 2.99, 4.99 VE replacement_cost 12.99, 15.99, 28.99 olma koşullarıyla sıralayınız.
 ```sql
 Select * from film where rental_rate In(0.99,2.99,4.99) and replacement_cost In(12.99,15.99,28.99);
 ```
-![Task1_2](images/task2_3.PNG)
+![Task2_3](images/task2_3.PNG)
 
 ## Ödev3
 
 ### <a name="odev3-soru1"></a>1. country tablosunda bulunan country sütunundaki ülke isimlerinden 'A' karakteri ile başlayıp 'a' karakteri ile sonlananları sıralayınız.
-Açıklama burada yer alır.
+![Task3_1](images/task3_1.PNG)
+```sql
+Select country From country where country like 'A%a';
+```
 
 ### <a name="odev3-soru2"></a>2. country tablosunda bulunan country sütunundaki ülke isimlerinden en az 6 karakterden oluşan ve sonu 'n' karakteri ile sonlananları sıralayınız.
-Açıklama burada yer alır.
+![Task3_2](images/task3_2.PNG)
+```sql
+Select country From country where country like'______%n';
+```
 
 ### <a name="odev3-soru3"></a>3. film tablosunda bulunan title sütunundaki film isimlerinden en az 4 adet büyük ya da küçük harf farketmesizin 'T' karakteri içeren film isimlerini sıralayınız.
-Açıklama burada yer alır.
+![Task3_3](images/task3_3.PNG)
+```sql
+select title From film where title Ilike '%t%t%t%t%'
+```
 
 ### <a name="odev3-soru4"></a>4. film tablosunda bulunan tüm sütunlardaki verilerden title 'C' karakteri ile başlayan ve uzunluğu (length) 90 dan büyük olan ve rental_rate 2.99 olan verileri sıralayınız.
-Açıklama burada yer alır.
+![Task3_4](images/task3_4.PNG)
+```sql
+Select * From film where title like 'C%' and length>90 and rental_rate=2.99;
+```
 
 ## Ödev4
 
