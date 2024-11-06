@@ -19,7 +19,7 @@
 
 ---
 
-## Ödev 1
+## Ödev1
 
 ### <a name="odev1-soru1"></a>1. film tablosunda bulunan ve film ismi (title) 'n' karakteri ile biten en uzun (length) 5 filmi sıralayınız.
 ```sql
@@ -41,7 +41,7 @@ Select last_name,store_id From customer Where store_id=1 order by  last_name  de
 
 ---
 
-## Ödev 2
+## Ödev2
 
 ### <a name="odev2-soru1"></a>1. film tablosunda bulunan rental_rate sütunundaki değerlerin ortalaması nedir?
 ![Task2_1](images/task2_1.PNG)
@@ -57,7 +57,7 @@ Select last_name,store_id From customer Where store_id=1 order by  last_name  de
 
 ---
 
-## Ödev 3
+## Ödev3
 
 ### <a name="odev3-soru1"></a>1. film tablosunda bulunan filmleri rating değerlerine göre gruplayınız.
 ![Task3_1](images/task3_1.PNG)
