@@ -67,13 +67,24 @@ Select Count(Distinct(replacement_cost) ) From film Where length>150;
 
 ## [Ödev3](#main)
 ### <a name="odev3-soru1"></a>1. film tablosunda bulunan filmleri rating değerlerine göre gruplayınız.
+```sql
+select rating From film Group By rating;
+```
 ![Task3_1](images/task3_1.PNG)
-
 ### <a name="odev3-soru2"></a>2. film tablosunda bulunan filmleri replacement_cost sütununa göre grupladığımızda film sayısı 50'den fazla olan replacement_cost değerini ve karşılık gelen film sayısını sıralayınız.
+```sql
+Select replacement_cost,Count(replacement_cost) From film Group by replacement_cost having Count(replacement_cost)>50;
+```
 ![Task3_2](images/task3_2.PNG)
 
 ### <a name="odev3-soru3"></a>3. customer tablosunda bulunan store_id değerlerine karşılık gelen müşteri sayılarını nelerdir?
+```sql
+Select store_id,Count(store_id) From customer Group by store_id;
+```
 ![Task3_3](images/task3_3.PNG)
 
 ### <a name="odev3-soru4"></a>4. city tablosunda bulunan şehir verilerini country_id sütununa göre gruplandırdıktan sonra en fazla şehir sayısı barındıran country_id bilgisini ve şehir sayısını paylaşınız.
+```sql
+Select country_id,Count(city),Max(city)as city_name from city  group by country_id order by Count(city) desc limit 1;
+```
 ![Task3_4](images/task3_4.PNG)
