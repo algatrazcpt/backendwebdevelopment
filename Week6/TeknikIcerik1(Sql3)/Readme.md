@@ -41,15 +41,26 @@ Select last_name,store_id From customer Where store_id=1 order by  last_name  de
 
 ## [Ödev2](#main)
 ### <a name="odev2-soru1"></a>1. film tablosunda bulunan rental_rate sütunundaki değerlerin ortalaması nedir?
+```sql
+Select Avg(rental_rate) from film 
+```
 ![Task2_1](images/task2_1.PNG)
 
 ### <a name="odev2-soru2"></a>2. film tablosunda bulunan filmlerden kaç tanesi 'C' karakteri ile başlar?
+```sql
+Select count(title) from film  where title like 'C%';
+```
 ![Task2_2](images/task2_2.PNG)
-
 ### <a name="odev2-soru3"></a>3. film tablosunda bulunan filmlerden rental_rate değeri 0.99'a eşit olan en uzun (length) film kaç dakikadır?
+```sql
+Select Max(length) from film  where rental_rate=0.99;
+```
 ![Task2_3](images/task2_3.PNG)
 
 ### <a name="odev2-soru4"></a>4. film tablosunda bulunan filmlerin uzunluğu 150 dakikadan büyük olanlarına ait kaç farklı replacement_cost değeri vardır?
+```sql
+Select Count(Distinct(replacement_cost) ) From film Where length>150;
+```
 ![Task2_4](images/task2_4.PNG)
 
 ---
