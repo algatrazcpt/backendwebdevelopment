@@ -35,8 +35,6 @@ Update employee Set birthday='11/8/2023' Where id=4 Returning *;
 Update employee Set email='email@mail.com' Where id=5 Returning *;
 Update employee Set email='email22@mail.com' Where name='Berrie' Returning *;
 ```
-![Task1_3](images/task1_3.PNG)
-
 ### <a name="odev1-soru4"></a>4. Sütunların her birine göre ilgili satırı silecek 5 adet DELETE işlemi yapalım.
 ```sql
 Delete From employee where  name='My' Returning * ;
