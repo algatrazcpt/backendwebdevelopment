@@ -20,17 +20,18 @@ namespace Pratik1Linq
         }
         static List<int> RandomListGenerate(int maxValue)
         {
+
             List<int> randomList= new List<int>();
             for(int value=0;value< maxValue;value++)
             {
                 randomList.Add(Random.Shared.Next(-100,100));
             }
             return randomList;
-            //return new List<int> { 0,10,20,30,40,50,60,70,80,90 };
         }
         static void ShowList <T>(string listName,string listIdName,List <T> listNumb)
         {
-            // Console.WriteLine($"*{new string('-', 40)}*");
+            //??
+            //Console.WriteLine($"*{new string('-', 40)}*");
             //Console.WriteLine("*---------------------------------*");
             Console.WriteLine(listName);
             if (listNumb.Count > 0)
