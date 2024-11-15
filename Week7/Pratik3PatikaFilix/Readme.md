@@ -11,3 +11,7 @@ Gösterim Yılı
 Yönetmen Adı
 İlk Çıkış Platformu
 Girilen bilgiler bir Dizi nesnesi olarak kaydedilir ve bir listeye eklenir. Daha sonra bu liste, tüm dizileri veya belirli kriterlere göre özelleştirilmiş dizileri listeleme seçenekleri sunar.
+## Proje Resimleri
+![Kullanci Dizi Girisi](images/images.PNG)
+![Listeleme Ekrani](images/images2.PNG)
+![Karisik Listeleme Ekrani](images/images3.PNG)
