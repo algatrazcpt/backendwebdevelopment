@@ -1,4 +1,4 @@
-#Pratik - LINQ
+# Pratik - LINQ
 ## Amaç
 Rastgele 10 adet sayıdan oluşan bir liste oluşturulacak ve aşağıdaki LINQ sorguları çalıştırılacaktır.
 
