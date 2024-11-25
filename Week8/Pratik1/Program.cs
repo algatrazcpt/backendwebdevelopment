@@ -13,7 +13,7 @@ app.MapGet("/About", () => "About Page!");
 
 
 app.UseStaticFiles();
-//burda static dosytalarý kullanýuoruz
+//burda static dosyalarý kullanýmýný açýyoruz
 app.Run();
 
 //Model uygulamamazýn iþ mantýgýný temsil ederer
