@@ -1,19 +1,26 @@
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddControllersWithViews();
+builder.Services.AddAuthorization(); // Authorization middleware için servis eklendi
+
+
 var app = builder.Build();
 //web sitemizi oluþturuyoruz
+
 
 app.UseHttpsRedirection();
 //https ile gevenli yapýya geçiyorruz
 
-app.MapGet("/", () => "Hello World!");
+//app.MapGet("/", () => "Hello World!");
 //burda yönlendirme yapýyoruz
 
 
-app.MapGet("/About", () => "About Page!");
+app.UseRouting();
+app.UseAuthorization(); // Authorization middleware'i etkinleþtirildi
 
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=MainSiteController}/{action=Index}");
 
-app.UseStaticFiles();
-//burda static dosyalarý kullanýmýný açýyoruz
 app.Run();
 
 //Model uygulamamazýn iþ mantýgýný temsil ederer
