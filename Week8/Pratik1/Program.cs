@@ -2,7 +2,7 @@ var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 //web sitemizi oluþturuyoruz
 
-app.UseHsts();
+app.UseHttpsRedirection();
 //https ile gevenli yapýya geçiyorruz
 
 app.MapGet("/", () => "Hello World!");
@@ -11,6 +11,9 @@ app.MapGet("/", () => "Hello World!");
 
 app.MapGet("/About", () => "About Page!");
 
+
+app.UseStaticFiles();
+//burda static dosytalarý kullanýuoruz
 app.Run();
 
 //Model uygulamamazýn iþ mantýgýný temsil ederer
