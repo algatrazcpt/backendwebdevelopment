@@ -1,0 +1,30 @@
+﻿@{
+    var  customer = ViewData["Customer"] as List<Pratik2.Models.Customer>;
+    var order = ViewData["Order"] as List<Pratik2.Models.Order>;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Details</title>
+</head>
+<body>
+    <h1>Customer Information</h1>
+    <h2>Customer Details</h2>
+    @foreach (var modelInfo in customer)
+    {
+        <p><strong>Id:</strong> @modelInfo.CustomerId</p>
+        <p><strong>First Name:</strong> @modelInfo.FirstName</p>
+        <p><strong>Last Name:</strong> @modelInfo.LastName</p>
+        <p><strong>Email:</strong> @modelInfo.Email</p>
+    }
+    <h1>Order Information</h1>
+    <h2>Order Details</h2>
+    @foreach (var modelInfo in order)
+    {
+        <p><strong>Id:</strong> @modelInfo.OrderId</p>
+        <p><strong>ProductName Name:</strong> @modelInfo.ProductName</p>
+        <p><strong>Quantity :</strong> @modelInfo.Quantity</p>
+    }
+</body>
+</html>
