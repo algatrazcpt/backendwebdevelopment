@@ -20,11 +20,21 @@
     }
     <h1>Order Information</h1>
     <h2>Order Details</h2>
-    @foreach (var modelInfo in order)
+    <table>
+        <tr>
+            <th>OrderId</th>
+            <th>ProductName</th>
+            <th>Quantity</th>
+        </tr>
+        @foreach (var modelInfo in order)
     {
-        <p><strong>Id:</strong> @modelInfo.OrderId</p>
-        <p><strong>ProductName Name:</strong> @modelInfo.ProductName</p>
-        <p><strong>Quantity :</strong> @modelInfo.Quantity</p>
+            <tr>
+                <th>@modelInfo.OrderId</th>
+                <th>@modelInfo.ProductName</th>
+                <th>@modelInfo.Quantity</th>
+            </tr>
+            
     }
+    </table>
 </body>
 </html>
