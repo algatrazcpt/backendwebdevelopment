@@ -1,6 +1,7 @@
-﻿namespace Pratik1.Controller
+﻿using Microsoft.AspNetCore.Mvc;
+namespace Pratik1.Controller
 {
-    public class MainSiteController:Controller
+    public class MainSiteController:ControllerBase
     {
         public IActionResult Index()
         {

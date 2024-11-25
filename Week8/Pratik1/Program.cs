@@ -10,7 +10,7 @@ var app = builder.Build();
 app.UseHttpsRedirection();
 //https ile gevenli yapýya geçiyorruz
 
-//app.MapGet("/", () => "Hello World!");
+app.MapGet("/", () => "Hello World!");
 //burda yönlendirme yapýyoruz
 
 
