@@ -30,11 +30,15 @@ namespace CrazyMusicians.Controllers
             }
         }
         [HttpGet]
-        [Route("/[controller]/[action]/name/{name}")]
-        public ActionResult<Musician> GetResearchMusician([FromQuery]string name)
+        [Route("/[controller]/[action]")]
+        public ActionResult<List<Musician>> GetResearchMusician([FromQuery] string? name)
         {
-            var v= musiciansList.Where(musician => musician.Name == name).ToList();
-            if(v!=null)
+            if(string.IsNullOrEmpty(name)||string.IsNullOrWhiteSpace(name))
+            {
+                return Ok(musiciansList);
+            }
+            var v= musiciansList.Where(musician => musician.Name.Contains(name)).ToList();
+            if(v.Any())
             {
                 return Ok(v);
             }
