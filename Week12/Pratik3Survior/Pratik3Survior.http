@@ -1,0 +1,6 @@
+@Pratik3Survior_HostAddress = http://localhost:5036
+
+GET {{Pratik3Survior_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
