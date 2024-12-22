@@ -12,6 +12,7 @@ Movie Tablosu:
 	ReleaseYear: Filmin çýkýþ yýlý (int).
 
 Game Tablosu:
+
 	Id: Birincil anahtar ve otomatik artan.
 	Name: Oyunun adý (string).
 	Platform: Oyunun oynandýðý platform (örneðin: "PC", "PlayStation", "Xbox") (string).
