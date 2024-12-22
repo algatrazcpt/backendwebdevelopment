@@ -1,18 +1,22 @@
 # Pratik3 Survivor Web API
-Bu API, Survivor yarışmasındaki yarışmacılar ve kategorilerle ilgili verileri sağlar. Aşağıda Read işlemlerini gerçekleştiren API endpoint'leri açıklanmıştır:
+## Kurulum 
+Dotnet version 8.0 gereklidir
+
+
+Bu API, Survivor yarÄ±ÅŸmasÄ±ndaki yarÄ±ÅŸmacÄ±lar ve kategorilerle ilgili verileri saÄŸlar. AÅŸaÄŸÄ±da Read iÅŸlemlerini gerÃ§ekleÅŸtiren API endpoint'leri aÃ§Ä±klanmÄ±ÅŸtÄ±r:
 
 Competitor Endpoints
 
-	GET /api/competitors: Tüm yarışmacıları listeler.
-	GET /api/competitors/{id}: Belirli bir yarışmacıyı getirir.
-	GET /api/competitors/categories/{categoryId}: Belirli bir kategoriye ait yarışmacıları listeler.
-	POST /api/competitors: Yeni bir yarışmacı oluşturur.
-	PUT /api/competitors/{id}: Belirli bir yarışmacıyı günceller.
-	DELETE /api/competitors/{id}: Belirli bir yarışmacıyı siler.
+	GET /api/competitors: TÃ¼m yarÄ±ÅŸmacÄ±larÄ± listeler.
+	GET /api/competitors/{id}: Belirli bir yarÄ±ÅŸmacÄ±yÄ± getirir.
+	GET /api/competitors/categories/{categoryId}: Belirli bir kategoriye ait yarÄ±ÅŸmacÄ±larÄ± listeler.
+	POST /api/competitors: Yeni bir yarÄ±ÅŸmacÄ± oluÅŸturur.
+	PUT /api/competitors/{id}: Belirli bir yarÄ±ÅŸmacÄ±yÄ± gÃ¼nceller.
+	DELETE /api/competitors/{id}: Belirli bir yarÄ±ÅŸmacÄ±yÄ± siler.
 Category Endpoints
 
-	GET /api/categories: Tüm kategorileri listeler.
+	GET /api/categories: TÃ¼m kategorileri listeler.
 	GET /api/categories/{id}: Belirli bir kategoriyi getirir.
-	POST /api/categories: Yeni bir kategori oluşturur.
-	PUT /api/categories/{id}: Belirli bir kategoriyi günceller.
+	POST /api/categories: Yeni bir kategori oluÅŸturur.
+	PUT /api/categories/{id}: Belirli bir kategoriyi gÃ¼nceller.
 	DELETE /api/categories/{id}: Belirli bir kategoriyi siler.
