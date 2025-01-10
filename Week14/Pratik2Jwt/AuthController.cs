@@ -11,13 +11,13 @@ namespace Pratik2Jwt
 {
     [ApiController]
     [Controller]
-    public class LoginController:ControllerBase
+    public class AuthController:ControllerBase
     {
 
         private readonly ApplicationDbContext _context;
         private readonly IConfiguration _configuration;
 
-        public LoginController(ApplicationDbContext context, IConfiguration configuration)
+        public AuthController(ApplicationDbContext context, IConfiguration configuration)
         {
             _context = context;
             _configuration = configuration;
